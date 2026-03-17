@@ -95,5 +95,6 @@ git push
 
 opcjonalnie:
 git config -l  (alt + q)
+.
 
 ```
