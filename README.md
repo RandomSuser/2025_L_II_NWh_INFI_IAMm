@@ -88,15 +88,18 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 # Cel
 ```
 Wykorzystanie:
-git init
-git clone
 
-git commit -a -m "$(git status --short)"
-git push 
+	Inicjacja:
+	git init
+	git clone
 
-opcjonalnie:
-git config -l  (alt + q)
-git add .
+	Cyklicznie:
+	git commit -a -m "$(git status --short)"
+	git push 
+
+	Opcjonalnie:
+	git config -l  (alt + q)
+	git add .
 
 
 ```
