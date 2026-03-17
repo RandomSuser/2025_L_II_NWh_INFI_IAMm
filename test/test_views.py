@@ -9,7 +9,7 @@ class FlaskrTestCase(unittest.TestCase):
         app.config['TESTING'] = True
         self.app = app.test_client()
         
-    #dubluje na potrzeby testów    
+    #Przekształcam funkcje setUP na potrzeby wykonania na niej testów    
     def test_setUp(self):
         app.config['TESTING'] = True
         self.app = app.test_client()
