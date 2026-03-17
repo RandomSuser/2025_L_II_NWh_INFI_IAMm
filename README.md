@@ -85,3 +85,15 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   $ yum install -y docker-ce
   $ systemctl start docker
   ```
+# Cel
+```
+Wykorzystanie:
+git init
+git clone
+git commit
+git push 
+
+opcjonalnie:
+git config -l  (alt + q)
+
+```
