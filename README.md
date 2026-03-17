@@ -90,11 +90,13 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 Wykorzystanie:
 git init
 git clone
-git commit
+
+git commit -a -m "$(git status --short)"
 git push 
 
 opcjonalnie:
 git config -l  (alt + q)
+git add .
 
 
 ```
