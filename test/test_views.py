@@ -4,9 +4,16 @@ from hello_world.formater import SUPPORTED
 
 
 class FlaskrTestCase(unittest.TestCase):
+    
     def setUp(self):
         app.config['TESTING'] = True
         self.app = app.test_client()
+        
+    #dubluje na potrzeby testów    
+    def test_setUp(self):
+        app.config['TESTING'] = True
+        self.app = app.test_client()
+        
 
     def test_outputs(self):
         rv = self.app.get('/outputs')
@@ -15,4 +22,4 @@ class FlaskrTestCase(unittest.TestCase):
 
     def test_msg_with_output(self):
         rv = self.app.get('/?output=json')
-        self.assertEqual(b'{ "imie":"Natalia", "mgs":Hello World!"}', rv.data)
+        self.assertEqual(b'{ "imie":"Andrzej", "mgs":"Hello World!"}', rv.data)

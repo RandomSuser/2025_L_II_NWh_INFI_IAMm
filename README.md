@@ -100,6 +100,11 @@ Wykorzystanie:
 	Opcjonalnie:
 	git config -l  (alt + q)
 	git add .
+	
+	Powrót do Root directory:
+	git rev-parse --show-toplevel    
 
+	Testy (Root_dir):
+	pythonpath=. pytest
 
 ```
