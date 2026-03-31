@@ -8,3 +8,5 @@ run:
 .PHONY: test
 test:
 	PYTHONPATH=. py.test --verbose -s
+run2:
+	flask --app main run
