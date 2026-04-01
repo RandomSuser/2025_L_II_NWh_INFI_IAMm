@@ -21,7 +21,7 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   py install 3.12
   
   py uninstall <ver>
-  py uninstall --purge
+  py uninstall --purge  #odinstaluj wszystkie ver runtimes python
   
   py list
   py --list
