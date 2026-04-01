@@ -12,12 +12,23 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   docs: https://docs.python.org/dev/using/windows.html
   msstore: https://apps.microsoft.com/detail/9nq7512cxl7t
   python org: https://www.python.org/downloads/windows/
+  python msix: https://www.python.org/ftp/python/pymanager/python-manager-26.1.msix
+  python msi: https://www.python.org/ftp/python/pymanager/python-manager-26.1.msi
   
   py help
+  py install --configure # rekonfiguracja taka jak przy pierwszej instalacji
+  
   py install 3.12
+  
   py uninstall <ver>
+  py uninstall --purge
+  
+  py list
   py --list
-  py -3.12   #wybranie wersji
+  py list --online
+  
+  py -3.12   #wybranie konkretnej wersji
+  py -3.11 -m venv .venv  #zmiana domyślnej konfiguracji w ramach venv
   
   # tworzymy hermetyczne środowisko dla bibliotek aplikacji:
   $ python -m venv .venv
