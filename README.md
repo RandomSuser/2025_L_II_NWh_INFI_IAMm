@@ -15,7 +15,7 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   python msix: https://www.python.org/ftp/python/pymanager/python-manager-26.1.msix
   python msi: https://www.python.org/ftp/python/pymanager/python-manager-26.1.msi
   
-  
+ 
   py help
   py install --configure # rekonfiguracja taka jak przy pierwszej instalacji
   
