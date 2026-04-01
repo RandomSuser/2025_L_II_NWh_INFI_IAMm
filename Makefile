@@ -10,3 +10,5 @@ test:
 	PYTHONPATH=. py.test --verbose -s
 run2:
 	flask --app main run
+docker_build: 
+	docker build -t hello-world-printer . 
