@@ -7,11 +7,24 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 - W projekcie wykorzystamy virtual environment, dla utworzenia hermetycznego środowisko dla aplikacji:
 
   ```
+  
+  #Python menager 
+  docs: https://docs.python.org/dev/using/windows.html
+  msstore: https://apps.microsoft.com/detail/9nq7512cxl7t
+  python org: https://www.python.org/downloads/windows/
+  
+  py help
+  py install 3.12
+  py uninstall <ver>
+  py --list
+  py -3.12   #wybranie wersji
+  
   # tworzymy hermetyczne środowisko dla bibliotek aplikacji:
   $ python -m venv .venv
 
   # aktywowanie hermetycznego środowiska
   $ source .venv/Scripts/activate
+  $ py -m pip install --upgrade pip  
   $ pip install -r requirements.txt
   $ pip install -r test_requirements.txt
 
@@ -87,7 +100,7 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   ```
 # Cel
 ```
-Wykorzystanie:
+git bash:
 
 	Inicjacja:
 	git init
@@ -99,7 +112,7 @@ Wykorzystanie:
 
 	Opcjonalnie:
 	git config -l  (alt + q)
-	git add .
+	git add --all
 	
 	Powrót do Root directory:
 	git rev-parse --show-toplevel    
@@ -107,4 +120,6 @@ Wykorzystanie:
 	Testy (Root_dir):
 	pythonpath=. pytest
 
+
+history >> Commands.md
 ```
