@@ -86,9 +86,10 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
 - Docker Push
 ```
-$ export USERNAME=TWOJ_LOGIN 
-$ export DOCKER_PASSWORD=TWOJE_HASLO  
-$ make docker_push  
+# Jesli haslo zawiera znak $ musi byc poprzedzony znakiem '\'
+export USERNAME="TWOJ_LOGIN"
+export DOCKER_PASSWORD="TWOJE_HASLO" 
+make docker_push  
 ```
 
 # Pomocnicze
