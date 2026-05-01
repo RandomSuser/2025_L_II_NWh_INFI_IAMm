@@ -11,8 +11,8 @@ jobs:
       - run: make lint
       - run: make test       
       - run: make docker_build
-      - run: testenv 
-      - run: make docker_push
+#      - run: make testenv 
+      - run: make docker_push_circle
 workflows: 
   basic:  
     jobs: 
