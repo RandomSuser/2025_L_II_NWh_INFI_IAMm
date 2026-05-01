@@ -84,6 +84,13 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   # miejsce na twoje notatki
   ```
 
+- Docker Push
+```
+$ export USERNAME=TWOJ_LOGIN 
+$ export DOCKER_PASSWORD=TWOJE_HASLO  
+$ make docker_push  
+```
+
 # Pomocnicze
 
 ## Ubuntu
